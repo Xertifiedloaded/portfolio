@@ -478,7 +478,7 @@ body {
     width: 80%;
     margin: 0 auto;
     /* border: 1px solid yellow; */
-    justify-content: center;
+    /* justify-content: center; */
     flex-wrap: wrap;
     column-gap: 20px;
     row-gap: 20px;
@@ -546,6 +546,13 @@ body {
     width: 30%;
     /* border: 1px solid red; */
     /* height: 200px; */
+}
+.box7{
+    background-image: url(/assets/images/samsung.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 30%;
 }
 
 .description {
