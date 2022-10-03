@@ -15,4 +15,24 @@ function collapseMenu() {
     }
 
 }
-hamburger.addEventListener("click" , collapseMenu)
+hamburger.addEventListener("click", collapseMenu)
+
+// 
+let slider = document.querySelector(".slider1")
+let images = new Array(
+    "assets/images/cttaste.png",
+    "assets/images/samsung.png",
+    "assets/images/huntr.png",
+    "assets/images/sendna.png",
+    "assets/images/validator.png",
+)
+let length = images.length
+let i = 0
+function moves() {
+    if (i > images.length - 1) {
+        i = 0
+    }
+    slider.src = images[i]
+    i++
+    setTimeout("moves()" , 3000)
+}

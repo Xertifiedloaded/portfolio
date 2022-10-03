@@ -603,7 +603,18 @@ body {
     color: var(--color-light-pink);
     font-family: serif;
 }
-
+.project-slider{
+    width: 70%;
+    margin: 0 auto;
+    padding-bottom: 40px;
+}
+.project-images-container{
+    width: 100%;
+}
+.slider1{
+    width: 100%;
+    border-radius: 10px;
+}
 @keyframes typing {
     20% {
         color: red;
@@ -1044,9 +1055,15 @@ fieldset {
         width: 100%;
     }
 
-
-
-
+.project-slider{
+    width: 100%;
+}
+.project-images-container{
+    width: 100%;
+}
+.slider1{
+    width: 100%;
+}
 
 
 

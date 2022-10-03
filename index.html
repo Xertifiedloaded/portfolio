@@ -15,7 +15,7 @@
     <script src="https://kit.fontawesome.com/4336f4871b.js" crossorigin="anonymous"></script>
 </head>
 
-<body>
+<body onload="moves()">
     <header>
         <div class="header-container">
             <div class="container">
@@ -187,7 +187,18 @@
                         <i class="fa-solid fa-laptop-code"></i>
                         <h1>Projects <span class="made">Made</span></h1>
                     </div>
-                    <div class="boxes">
+
+                    <div class="project-slider">
+                        <div class="project-images-container">
+                            <img class="slider1" src="assets/images/cttaste.png" alt="">
+                            <!-- <img class="slider1" src="assets/images/samsung.png" alt="">
+                            <img class="slider1" src="assets/images/huntr.png" alt="">
+                            <img class="slider1" src="assets/images/sendna.png" alt="">
+                            <img class="slider1" src="assets/images/validator.png" alt="">
+                            <img class="slider1" src="assets/images/cttaste.png" alt="">
+                        </div> -->
+                    </div>
+                    <!-- <div class="boxes">
                         <div class="box box1">
                             <div class="box-content">
                                 <div class="heading">
@@ -297,8 +308,8 @@
                                         <button class="btn-view">view</button>
                                         <button class="btn-view"> code</button>
                                     </div>
-                                </div>
-                            </div>
+                                </div> -->
+                            <!-- </div> -->
                         </div>
                     </div>
 
@@ -443,7 +454,7 @@
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
     <script>
         let typed = new Typed(".typing", {
-            strings: ["front-End development", "web development", "crypo analysing"],
+            strings: ["front-End development", "web development", "crypo analyzing","cooking"],
             typeSpeed: 150,
             backSpeed: 150,
             loop: true
