@@ -103,6 +103,7 @@ body {
 .hero {
     width: 100%;
     border-radius: 100%;
+
 }
 
 .wrapper {
@@ -378,6 +379,12 @@ body {
     padding: 20px;
 }
 
+a {
+    color: white;
+    text-decoration: none;
+
+}
+
 .cards {
     width: 80%;
     margin: 0 auto;
@@ -473,112 +480,6 @@ body {
     font-weight: 900;
 }
 
-.boxes {
-    display: flex;
-    width: 80%;
-    margin: 0 auto;
-    /* border: 1px solid yellow; */
-    /* justify-content: center; */
-    flex-wrap: wrap;
-    column-gap: 20px;
-    row-gap: 20px;
-}
-
-.box {
-    height: 250px;
-}
-
-.box1 {
-    background-image: url(/assets/images/bitcoin.png);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 30%;
-    /* border: 1px solid red; */
-    /* */
-}
-
-.box2 {
-    background-image: url(/assets/images/cttaste.png);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 30%;
-    /* border: 1px solid red; */
-    /* height: 200px; */
-}
-
-.box3 {
-    background-image: url(/assets/images/sendna.png);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 30%;
-    /* border: 1px solid red; */
-    /* height: 200px; */
-}
-
-.box4 {
-    background-image: url(/assets/images/huntr.png);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 30%;
-    /* border: 1px solid red; */
-    /* height: 200px; */
-}
-
-.box5 {
-    background-image: url(/assets/images/validator.png);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 30%;
-    /* border: 1px solid red; */
-    /* height: 200px; */
-}
-
-.box6 {
-    background-image: url(/assets/images/portfolio.png);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 30%;
-    /* border: 1px solid red; */
-    /* height: 200px; */
-}
-.box7{
-    background-image: url(/assets/images/samsung.png);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 30%;
-}
-
-.description {
-
-    background-color: yellow;
-}
-
-.flex-btn {
-    display: flex;
-    justify-content: space-between;
-    padding: 30px 0;
-}
-
-.btn-view {
-    padding: 10px 25px;
-    background-color: black;
-    color: white;
-}
-
-.heading {
-    background-color: var(--color-light-yellow);
-}
-
-.heading>.heading-tilt {
-    padding: 10px 0;
-}
 
 .box-content {
     margin-top: 20px;
@@ -603,18 +504,22 @@ body {
     color: var(--color-light-pink);
     font-family: serif;
 }
-.project-slider{
+
+.project-slider {
     width: 70%;
     margin: 0 auto;
     padding-bottom: 40px;
 }
-.project-images-container{
+
+.project-images-container {
     width: 100%;
 }
-.slider1{
+
+.slider1 {
     width: 100%;
     border-radius: 10px;
 }
+
 @keyframes typing {
     20% {
         color: red;
@@ -847,6 +752,187 @@ fieldset {
     display: none;
 }
 
+.section {
+    width: 100%;
+}
+
+.box-all {
+    width: 100%;
+    margin: 50px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    row-gap: 10px;
+    column-gap: 10px;
+}
+
+.box-all .box {
+    width: 30%;
+    height: 250px;
+    /* border: 1px solid red; */
+    position: relative;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 10px;
+
+}
+
+@keyframes box {
+    0% {
+        transform: scaleX(2%);
+    }
+
+    100% {
+        transform: scaleY(5%);
+    }
+}
+
+.one {
+    background-image: url(/assets/images/cttaste.png);
+
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+}
+
+.two {
+    background-image: url(/assets/images/huntr.png);
+
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.three {
+    background-image: url(/assets/images/samsung.png);
+
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.four {
+    background-image: url(/assets/images/bitcoin.png);
+
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.five {
+    background-image: url(/assets/images/sendna.png);
+
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.six {
+    background-image: url(/assets/images/validator.png);
+
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.seven {
+    background-image: url(/assets/images/portfolio.png);
+
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.eight {
+    background-image: url(/assets/images/tsf-bank.png);
+
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.nine {
+    background-image: url(/assets/images/calculator.png);
+
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.box>.article {
+    display: none;
+    position: absolute;
+
+}
+
+.box:hover .article {
+    display: block;
+}
+
+.article-heading {
+    margin-top: 45px;
+    padding: 10px;
+    background-color: #ffae00;
+    text-align: center;
+    border-radius: 5px;
+    text-transform: capitalize;
+}
+
+.article-btn {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.article-content {
+    font-size: 14px;
+    text-align: center;
+    padding: 20px 0;
+    /* background-color: #e5ecfb; */
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 10px;
+    /* opacity: 0.7; */
+    z-index: 5;
+    animation: article 5s ease-in-out;
+    font-weight: 300;
+    background-color: #e5ecfb;
+
+}
+
+@keyframes article {
+    0% {
+        transform: translateY(25%);
+
+    }
+}
+
+.btn-article {
+    padding: 10px 25px;
+    border-radius: 5px;
+    background-color: black;
+    color: white;
+    text-transform: capitalize;
+}
+
+.btn-article:hover {
+    background-color: #2506ad;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 @media screen and (max-width:600px) {
     .header-flex {
         width: 100%;
@@ -882,23 +968,23 @@ fieldset {
         align-items: center;
         position: absolute;
         top: 50px;
-    
+
     }
 
-   
+
     .hide {
         display: none;
     }
-    
+
     .show {
         display: flex;
     }
-    
+
 
     .nav-item {
         padding: 20px 0;
-       font-size: 20px;
-       color: var(--background-color);
+        font-size: 20px;
+        color: var(--background-color);
     }
 
     .list-menu {
@@ -983,6 +1069,8 @@ fieldset {
     .card {
         display: block;
         width: 100%;
+        margin-bottom: 20px;
+        text-align: center;
     }
 
     .flex-img {
@@ -1001,15 +1089,7 @@ fieldset {
         width: 100%;
     }
 
-    .boxes {
-        display: block;
-        width: 100%;
-    }
 
-    .box {
-        width: 100%;
-        margin-bottom: 10px;
-    }
 
     .get-in-touch-container {
         width: 100%;
@@ -1055,16 +1135,27 @@ fieldset {
         width: 100%;
     }
 
-.project-slider{
-    width: 100%;
-}
-.project-images-container{
-    width: 100%;
-}
-.slider1{
-    width: 100%;
-}
+    .project-slider {
+        width: 100%;
+    }
 
+    .project-images-container {
+        width: 100%;
+    }
 
+    .slider1 {
+        width: 100%;
+    }
 
+    .box-all {
+        width: 100%;
+        display: block;
+       
+    }
+
+    .box-all .box {
+        width: 100%;
+        margin-bottom: 15px;
+
+    }
 }

@@ -25,6 +25,7 @@ let images = new Array(
     "assets/images/huntr.png",
     "assets/images/sendna.png",
     "assets/images/validator.png",
+    "assets/images/tsf-bank.png",
 )
 let length = images.length
 let i = 0
