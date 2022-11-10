@@ -15,83 +15,75 @@
     <script src="https://kit.fontawesome.com/4336f4871b.js" crossorigin="anonymous"></script>
 </head>
 
-<body onload="moves()">
+<!-- <body onload="moves()"> -->
+
+<body>
     <header>
-        <div class="header-container">
-            <div class="container">
-                <div class="header-flex">
-                    <div class="logo-container">
-                        <i class="fa-brands fa-mixer"></i>
-                        <h1 class="xerty">ertified</h1>
+        <div id="header">
+            <div class="logo-nav">
+                <div class="container">
+                    <div class="flex-header">
+                        <div class="logo">
+                            <i class="fa-solid fa-o"></i><span>laitan</span>
+                        </div>
+                        <div class="nav desktop">
+                            <ul class="nav-menu">
+                                <li class="list-items"><a href="#header">home</a></li>
+                                <li class="list-items">about</li>
+                                <li class="list-items">portfolio</li>
+                                <li class="list-items">education</li>
+                                <li class="list-items">contact us</li>
+                                <li class="list-items">skills</li>
+                            </ul>
+                        </div>
+                        <div class="nav mobile">
+                        <span class="hamburger"><i class="fa-solid fa-bars"></i></span>
+                        </div>
                     </div>
-                    <nav class="nav-menu desktop">
-                        <ul class="list-menu">
-                            <li class="nav-item">home</li>
-                            <li class="nav-item"><a href="#about">about</a></li>
-                            <li class="nav-item"><a href="#skills">skills</a></li>
-                            <li class="nav-item"><a href="#education">education</a></li>
-                            <li class="nav-item"><a href="#work">work</a></li>
-                            <li class="nav-item"><a href="experience">experience</a></li>
-                            <li class="nav-item"><a href="#contact"></a></li>
-                        </ul>
-                    </nav>
-                    <nav class="nav-menu mobile">
-                        <span class="hamburger"><i class="fa-sharp fa-solid fa-bars"></i></span>
-                    </nav>
+
                 </div>
+
             </div>
         </div>
+
     </header>
-    <div class="nav-slide hide">
-        <ul class="list-menu">
-            <li class="nav-item">home</li>
-            <li id="about" class="nav-item">about</li>
-            <li class="nav-item">skills</li>
-            <li class="nav-item">education</li>
-            <li class="nav-item">work</li>
-            <li class="nav-item">experience</li>
-            <li class="nav-item">contact</li>
-        </ul>
-    </div>
+
     <section>
         <div class="container">
-            <div class="separate">
-                <div class="intro-container">
-                    <div class="introduction">
-                        <div class="social-intro">
-                            <h2 id="about" class="hi">
-                                hi there, <br>i'm Makinde <span class="span">Olaitan</span>
-                            </h2>
-                            <div class="wrapper">
-                                <div class="static">I Am into <span class="typing"></span></div>
 
-                            </div>
-                            <div class="button-container">
-                                <button class="about-btn">
-                                    <span>about me</span>
-                                    <i class="fa-solid fa-circle-arrow-down"></i>
-                                </button>
-                            </div>
 
-                            <div class="social-container">
-                                <ul class="social-menu">
-                                    <li class="social-items"><i class="fa-brands fa-linkedin"></i></li>
-                                    <li class="social-items"><i class="fa-brands fa-github"></i></li>
-                                    <li class="social-items"><i class="fa-brands fa-twitter"></i></li>
-                                    <li class="social-items"><i class="fa-brands fa-telegram"></i></li>
-                                    <li class="social-items"><i class="fa-brands fa-dev"></i></li>
-                                </ul>
-                            </div>
-
-                        </div>
+            <div class="introduction">
+                <div class="social-intro">
+                    <h2 id="about" class="hi">
+                        hi there, <br>i'm Makinde <span class="span">Olaitan</span>
+                    </h2>
+                    <div class="wrapper">
+                        <div class="static">I Am into <span class="typing"></span></div>
 
                     </div>
-                    <div class="img-container">
-                        <img class="hero" src="assets/images/hero.png">
+                    <div class="button-container">
+                        <button class="about-btn">
+                            <span>Download CV</span>
+                            <i class="fa-solid fa-circle-arrow-down"></i>
+                        </button>
+                    </div>
+
+                    <div class="social-container">
+                        <ul class="social-menu">
+                            <li class="social-items"><i class="fa-brands fa-linkedin"></i></li>
+                            <li class="social-items"><i class="fa-brands fa-github"></i></li>
+                            <li class="social-items"><i class="fa-brands fa-twitter"></i></li>
+                            <li class="social-items"><i class="fa-brands fa-telegram"></i></li>
+                            <li class="social-items"><i class="fa-brands fa-dev"></i></li>
+                        </ul>
                     </div>
                 </div>
-
+                <div class="img-container">
+                    <!-- <img class="hero" src="assets/images/hero.png"> -->
+                </div>
             </div>
+
+
         </div>
 
 
@@ -107,31 +99,50 @@
 
                 <div class="flex-name-address">
                     <div class="my-img-container">
-                        <img class="xerty-img" src="assets/images/xerty.JPG">
+                        <img class="xerty-img" src="assets/images/xerty-p.jpg">
                     </div>
                     <div class="address">
                         <div class="name-add">
-                            <h1 class="my-name">i'm Olaitan</h1>
+                            <h1 class="my-name"><i class="fa-solid fa-user"></i>i'm Olaitan</h1>
                             <p class="dev">frontend developer</p>
                             <p class="front">I am a Front-end developer based in funaab Abeokuta. I am a Genetics
                                 undergraduate student from FUNAAB. I am very passionate about improving my coding skills
                                 &
-                                developing applications & websites. Working for myself to improve my skills. Love to
-                                build
-                                font-end clones.</p>
+                                developing websites. Working for myself to improve my skills.
+
+                            </p>
+
                         </div>
                         <div class="new-address">
-                            <p class="age"> Age:<span class="my-age">20</span></p>
-                            <p class="mail">Email:<span class="my-mail">certifiedloaded@yahoo.com</span></p>
-                        </div>
-                        <div class="new-address">
-                            <p class="age"> Phone:<span class="my-age">08050726434</span></p>
-                            <p class="mail">Address:<span class="my-mail">kuola apata</span></p>
+                            <div class="label-details">
+                                <p>I believed coding is a vast or process of transforming, ideas, solutions and
+                                    instructions into language provide rules for building websites which is why i
+                                    believe all ideas are worth implementing provided they are well expressed and
+                                    presented <br> <br> My prolong is in helping bring ideas to life through web
+                                    development and make them unique to client or brands I also proficient in spotting
+                                    errors and editing codes to make them better understood</p>
+                            </div>
+
+                            <div class="flex-address">
+                                <div class="fa-container">
+                                    <i class="fa-solid fa-location-dot"></i>
+                                    <div class="solid">
+                                        <label for="name">Address</label>
+                                        <p class="newaddress">kuola Apata Ibadan</p>
+                                    </div>
+                                </div>
+                                <div class="fa-container">
+                                    <i class="fa-solid fa-envelope"></i>
+                                    <div class="solid">
+                                        <label for="name">Email</label>
+                                        <p class="newaddress">certifiedloaded@yahoo.com</p>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
     </section>
     <section>
         <div class="edu-container">
@@ -180,225 +191,74 @@
                         <h1>Projects <span class="made">Made</span></h1>
                     </div>
                     <div class="project-slider">
-                        <!-- <div class="project-images-container"> -->
                         <img class="slider1" src="assets/images/cttaste.png" alt="">
-                        <!-- <img class="slider1" src="assets/images/samsung.png" alt="">
-                            <img class="slider1" src="assets/images/huntr.png" alt="">
-                            <img class="slider1" src="assets/images/sendna.png" alt="">
-                            <img class="slider1" src="assets/images/validator.png" alt="">
-                            <img class="slider1" src="assets/images/cttaste.png" alt="">
-                        </div> -->
+
                     </div>
+
+                    <div class="gallery">
+                        <i class="fa-solid chevron fa-chevron-left"></i>
+                        <div class="life-img-gallery">
+                            <img class="lifeimg" src="assets/images/cttaste.png">
+                            <img class="lifeimg" src="assets/images/huntr.png">
+                            <img class="lifeimg" src="assets/images/samsung.png">
+                            <img class="lifeimg" src="assets/images/sendna.png">
+                            <img class="lifeimg" src="assets/images/tsf-bank.png">
+                            <img class="lifeimg" src="assets/images/validator.png">
+                            <img class="lifeimg" src="assets/images/bitcoin.png">
+                            <img class="lifeimg" src="assets/images/portfolio.png">
+                            <img class="lifeimg" src="assets/images/calculator.png">
+                        </div>
+                        <i class="fa-solid chevron fa-chevron-right"></i>
+                    </div>
+                    <div class="btn-cont-all">
+                        <button class="view">view all</button>
+                    </div>
+                  
                 </div>
+                
             </div>
         </div>
+     
     </section>
     <!-- projects made -->
-    <section>
-        <div class="section">
-            <div class="container">
-                <div class="box-all">
-                    <div class="box one">
-                        <div class="article">
-                            <div class="article-heading">
-                                ctaste
-                            </div>
-                            <div class="article-content">
-                                <p>Full-Stack Flipkart Clone Using LAMP Stack. With All Major Features And OTP
-                                    Authentication And Cashfree Payment Gateway.</p>
-                                    <div class="article-btn">
-                                        <button class="btn-article">code</button>
-                                        <button class="btn-article">view</button>
-                                    </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="box two">
-                        <div class="article">
-                            <div class="article-heading">
-                                huntr
-                            </div>
-                            <div class="article-content">
-                                <p>Full-Stack Flipkart Clone Using LAMP Stack. With All Major Features And OTP
-                                    Authentication And Cashfree Payment Gateway.</p>
-                                    <div class="article-btn">
-                                        <button class="btn-article">code</button>
-                                        <button class="btn-article">view</button>
-                                    </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="box three">
-                        <div class="article">
-                            <div class="article-heading">
-                                samsung svr
-                            </div>
-                            <div class="article-content">
-                                <p>Full-Stack Flipkart Clone Using LAMP Stack. With All Major Features And OTP
-                                    Authentication And Cashfree Payment Gateway.</p>
-                                    <div class="article-btn">
-                                        <button class="btn-article">code</button>
-                                        <button class="btn-article">view</button>
-                                    </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="box four">
-                        <div class="article">
-                            <div class="article-heading">
-                                bitcoin website
-                            </div>
-                            <div class="article-content">
-                                <p>Full-Stack Flipkart Clone Using LAMP Stack. With All Major Features And OTP
-                                    Authentication And Cashfree Payment Gateway.</p>
-                                <div class="article-btn">
-                                    <button class="btn-article">code</button>
-                                    <button class="btn-article">view</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="box five">
-                        <div class="article">
-                            <div class="article-heading">
-                                sendna
-                            </div>
-                            <div class="article-content">
-                                <p>Full-Stack Flipkart Clone Using LAMP Stack. With All Major Features And OTP
-                                    Authentication And Cashfree Payment Gateway.</p>
-                                    <div class="article-btn">
-                                        <button class="btn-article">code</button>
-                                        <button class="btn-article">view</button>
-                                    </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="box six">
-                        <div class="article">
-                            <div class="article-heading">
-                                dapp sync
-                            </div>
-                            <div class="article-content">
-                                <p>Full-Stack Flipkart Clone Using LAMP Stack. With All Major Features And OTP
-                                    Authentication And Cashfree Payment Gateway.</p>
-                                    <div class="article-btn">
-                                        <button class="btn-article">code</button>
-                                        <button class="btn-article">view</button>
-                                    </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="box seven">
-                        <div class="article">
-                            <div class="article-heading">
-                                my prtfolio
-                            </div>
-                            <div class="article-content">
-                                <p>Full-Stack Flipkart Clone Using LAMP Stack. With All Major Features And OTP
-                                    Authentication And Cashfree Payment Gateway.</p>
-                                    <div class="article-btn">
-                                        <button class="btn-article">code</button>
-                                        <button class="btn-article">view</button>
-                                    </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="box eight">
-                        <div class="article">
-                            <div class="article-heading">
-                                tsf bank
-                            </div>
-                            <div class="article-content">
-                                <p>Full-Stack Flipkart Clone Using LAMP Stack. With All Major Features And OTP
-                                    Authentication And Cashfree Payment Gateway.</p>
-                                    <div class="article-btn">
-                                        <button class="btn-article">code</button>
-                                        <button class="btn-article">view</button>
-                                    </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="box nine">
-                        <div class="article">
-                            <div class="article-heading">
-                                calculator
-                            </div>
-                            <div class="article-content">
-                                <p>Full-Stack Flipkart Clone Using LAMP Stack. With All Major Features And OTP
-                                    Authentication And Cashfree Payment Gateway.</p>
-                                    <div class="article-btn">
-                                        <button class="btn-article">code</button>
-                                        <button class="btn-article">view</button>
-                                    </div>
-                            </div>
-                        </div>
+
+
+
+    <section class="my-project">
+        <!-- <div class="container"> -->
+        <div class="contact-box ">
+            <div class="contact-heading">
+                <h2> contact me</h2>
+                <p>if you have any project in your mind</p>
+                <p>i am a front-end web developer creating bold and brave web design</p>
+                <p>08050726434</p>
+            </div>
+
+            <form class="my-form" action="">
+                <div class="container">
+                    <input type="text" placeholder="your name">
+                    <input type="email" placeholder="Enter your email">
+                    <input type="text" placeholder="enter your phone number">
+                    <input class="help" type="text" placeholder="how can i help you">
+                    <div class="form-btn">
+                        <button class="send-btn">send message</button>
                     </div>
                 </div>
-            </div>
-        </div>
-    </section>
-
-
-
-    <!--  -->
-
-
-
-
-    <section>
-        <div class="section-container">
-            <div class="container">
-                <div class="get-in-touch-container">
-                    <div class="form-box">
-                        <div class="form-content">
-                            <i class="fa-solid fa-headset"></i>
-                            <h3 class="in-touch">get in <span class="touch">touch</span></h3>
-                        </div>
-                        <div class="form-flex">
-                            <div class="form-img-container">
-                                <img class="form-img" src="assets/images/contact1.png">
-                            </div>
-                            <form action="" class="form">
-                                <div class="form-input">
-                                    <div class="input-items">
-                                        <i class="fa-solid fa-user text-area-icon"></i><input class="input" type="text"
-                                            placeholder="name">
-                                    </div>
-
-                                </div>
-                                <div class="form-input">
-                                    <div class="input-items">
-                                        <i class="fa-solid fa-envelope text-area-icon"></i><input class="input"
-                                            type="email" placeholder="email">
-                                    </div>
-
-                                </div>
-                                <div class="form-input">
-                                    <div class="input-items">
-                                        <i class="fa-solid fa-phone  text-area-icon"></i><input class="input"
-                                            type="text" placeholder="Phone">
-                                    </div>
-
-                                </div>
-                                <div class="message">
-                                    <div class="text-input-area">
-                                        <i class="fa-solid fa-comment-dots text-area-icon"></i>
-                                        <textarea class="textarea" placeholder="message" name="" id="" cols="30"
-                                            rows="10"></textarea>
-                                    </div>
-
-                                </div>
-
-
-                            </form>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
+                
+            </form>
         </div>
 
+
+
+
+
+
+
+
+        <!-- </div> -->
+
     </section>
+
     <footer>
         <div class="footer">
             <div class="container">
@@ -475,14 +335,15 @@
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
     <script>
         let typed = new Typed(".typing", {
-            strings: ["front-End development", "web development", "crypo analyzing", "cooking"],
+            strings: ["front-End development < / >", "web development 💻","blogging 💻",],
             typeSpeed: 150,
             backSpeed: 150,
             loop: true
         })
     </script>
     <script src="assets/script/nav.js"></script>
-    <script src="assets/scripts/script.js"></script>
+    <script src="assets/script/slider.js"></script>
+    <!-- <script src="assets/scripts/script.js"></script> -->
 </body>
 
 </html>
