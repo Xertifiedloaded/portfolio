@@ -11,11 +11,14 @@
     --color-light-blue: rgb(0, 217, 255);
     --background-color: #e5ecfb;
     --color-green: rgb(34, 109, 0);
+    --social-background: rgba(160, 36, 243, 0.3);
 }
 
 * {
     margin: 0;
     padding: 0;
+    transition: all .2s linear;
+    text-transform: capitalize;
 }
 
 body {
@@ -134,11 +137,87 @@ body {
 
 }
 
+.navigation {
+    background-color: red;
+    width: 100px;
+    text-align: center;
+    padding: 15px 10px;
+    border-radius: 5px;
+}
+
 .gallery {
     padding-bottom: 20px;
     width: 100%;
     position: relative;
 
+}
+
+.col {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    /* border: 1px solid red; */
+    position: relative;
+    margin-top: 100px;
+    column-gap: 10px;
+    row-gap: 10px;
+    flex-wrap: wrap;
+}
+
+.row {
+    width: 40%;
+
+}
+.row:hover .link-code{
+  
+    display: flex;
+    /* display: flex; */
+    justify-content: space-between;
+    /* position: absolute; */
+    width: 99%;
+    margin: 0 auto;
+    height: 100%;
+    column-gap: 50px;
+    align-items: center;
+    background-color: var(--social-background);
+}
+.link-code {
+    display: none;
+    /* display: flex; */
+    justify-content: space-between;
+    /* position: absolute; */
+    width: 99%;
+    margin: 0 auto;
+    height: 100%;
+    column-gap: 50px;
+    align-items: center;
+    background-color: var(--social-background);
+}
+.link-code:hover{
+    display: flex;
+}
+
+.project-btn {
+
+    padding: 10px 30px;
+    border: none;
+    background-color: var(--color-light-yellow);
+    color: #2506ad;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+
+
+
+.row>.bg-item {
+
+    width: 95%;
+    height: 300px;
+    margin: 0 auto;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 }
 
 .life-img-gallery {
@@ -845,7 +924,7 @@ input {
 }
 
 .seven {
-    background-image: url(/assets/images/portfolio.png);
+    background-image: url(/assets/images/portfo.png);
 
     background-repeat: no-repeat;
     background-position: center;
@@ -861,7 +940,14 @@ input {
 }
 
 .nine {
-    background-image: url(/assets/images/calculator.png);
+    background-image: url(/assets/images/calc.png);
+
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.ten {
+    background-image: url(/assets/images/composey.png);
 
     background-repeat: no-repeat;
     background-position: center;
@@ -1125,56 +1211,70 @@ input {
         text-align: center;
         font-size: 12px;
     }
-.flex-name-address{
-    display: block;
-}
-.name-add>.my-name{
-    justify-content: center;
-}
-.label-details>p{
-    font-size: 14px;
-    text-align: center;
-}
-.life-img-gallery{
-    width: 80%;
-    height: 40px;
-}
-.fa-chevron-left{
-    left: 3%;
-}
-.fa-chevron-right{
-    left: 90%;
-}
-.chevron{
-    top: 10%;
-}
-.contact-box{
-    display: block;
-}
-.contact-heading{
-    width: 100%;
-    
-}
-.contact-heading>h2{
-    text-align: center;
-    padding-bottom: 10px;
-}
-.my-form{
-    width: 100%;
-}
-.contact-heading>p{
-    display: none;
-}
 
-.social-intro{
-    width: 100%;
-}
-.social-container>.social-menu{
-    display: none;
-}
-.img-container{
-    display: none;
-}
+    .flex-name-address {
+        display: block;
+    }
+
+    .name-add>.my-name {
+        justify-content: center;
+    }
+
+    .label-details>p {
+        font-size: 14px;
+        text-align: center;
+    }
+
+    .life-img-gallery {
+        width: 80%;
+        height: 40px;
+    }
+
+    .fa-chevron-left {
+        left: 3%;
+    }
+
+    .fa-chevron-right {
+        left: 90%;
+    }
+
+    .chevron {
+        top: 10%;
+    }
+
+    .contact-box {
+        display: block;
+    }
+
+    .contact-heading {
+        width: 100%;
+
+    }
+
+    .contact-heading>h2 {
+        text-align: center;
+        padding-bottom: 10px;
+    }
+
+    .my-form {
+        width: 100%;
+    }
+
+    .contact-heading>p {
+        display: none;
+    }
+
+    .social-intro {
+        width: 100%;
+    }
+
+    .social-container>.social-menu {
+        display: none;
+    }
+
+    .img-container {
+        display: none;
+    }
 
 
 
