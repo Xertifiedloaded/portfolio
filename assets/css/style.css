@@ -1276,8 +1276,15 @@ input {
         display: none;
     }
 
-
-
+.col{
+    display: block;
+}
+.row{
+    width: 100%;
+    margin: 10px 0;
+    border: 1px solid rgba(255, 248, 220, 0.254);
+    border-radius: 5px;
+}
 
 
 
