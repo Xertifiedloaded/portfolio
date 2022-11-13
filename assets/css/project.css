@@ -1,0 +1,282 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+:root {
+    --color-deep-blue: #002057;
+    --color-orange: #ff7b00;
+    --color-royal-blue: #2506ad;
+    --color-light-pink: rgb(115, 3, 167);
+    --color-light-green: rgb(34, 109, 0);
+    --color-light-yellow: rgb(255, 230, 0);
+    --color-dark-white: rgb(255, 255, 255);
+    --color-light-blue: rgb(0, 217, 255);
+    --background-color: #e5ecfb;
+    --color-green: rgb(34, 109, 0);
+    --social-background: rgba(160, 36, 243, 0.3);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    transition: all .2s linear;
+    text-transform: capitalize;
+
+}
+
+body {
+    background-color: black;
+    color: white;
+    font-family: 'Lato', sans-serif;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+
+}
+
+.header {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+
+}
+
+.active-header {
+    background-color: white;
+    box-shadow: 0 1px 4px rgb(146 161 176 / 30%);
+}
+
+.header-flex {
+
+    width: 100%;
+    /* margin: 0 auto; */
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.nav {
+    display: flex;
+}
+
+.nav-menu-icon {
+    display: none;
+}
+
+.hamburger {
+    font-size: 20px;
+}
+
+.nav>.nav-menu {
+    width: 100%;
+    display: flex;
+    gap: 20px;
+
+}
+
+ul {
+    list-style: none;
+}
+
+.col {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    margin-top: 100px;
+    column-gap: 10px;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.row {
+    width: 30%;
+
+}
+
+.row:hover .link-code {
+
+    display: flex;
+    justify-content: space-between;
+    width: 99%;
+    margin: 0 auto;
+    height: 100%;
+    column-gap: 50px;
+    align-items: center;
+    background-color: var(--social-background);
+}
+
+.row>.bg-item {
+
+    width: 95%;
+    height: 300px;
+    margin: 0 auto;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.link-code {
+    display: none;
+    justify-content: space-between;
+    width: 99%;
+    margin: 0 auto;
+    height: 100%;
+    column-gap: 50px;
+    align-items: center;
+    background-color: var(--social-background);
+}
+
+.link-code:hover {
+    display: flex;
+}
+
+.project-btn {
+
+    padding: 10px 30px;
+    border: none;
+    background-color: var(--color-light-yellow);
+    color: #2506ad;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+.one {
+    background-image: url(/assets/images/cttaste.png);
+
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+}
+
+.two {
+    background-image: url(/assets/images/huntr.png);
+
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.three {
+    background-image: url(/assets/images/samsung.png);
+
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.four {
+    background-image: url(/assets/images/bitcoin.png);
+
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.five {
+    background-image: url(/assets/images/sendna.png);
+
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.six {
+    background-image: url(/assets/images/validator.png);
+
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.seven {
+    background-image: url(/assets/images/portfo.png);
+
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.eight {
+    background-image: url(/assets/images/tsf-bank.png);
+
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.nine {
+    background-image: url(/assets/images/calc.png);
+
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.ten {
+    background-image: url(/assets/images/composey.png);
+
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+@media screen and (max-width:600px) {
+
+    .col {
+        display: block;
+    }
+
+    .row {
+        width: 100%;
+        margin: 10px 0;
+        border: 1px solid rgba(255, 248, 220, 0.254);
+        border-radius: 5px;
+    }
+
+
+
+
+    .nav-menu-icon {
+        display: block;
+    }
+
+    .nav {
+        width: 100%;
+        background-color: red;
+        height: 100vh;
+        position: absolute;
+        top: 70%;
+        left: 0;
+        /* display: flex; */
+        justify-content: center;
+        align-items: center;
+        z-index: 1000;
+    }
+
+    .hide {
+        display: none;
+    }
+.show{
+    display: flex;
+}
+    .nav-menu {
+        width: 100%;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .header {
+        width: 100%;
+        position: relative;
+
+    }
+
+
+}

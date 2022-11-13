@@ -19,3 +19,4 @@ chevronRight.addEventListener("click",()=>{
     gallery.scrollLeft -= 150
     console.log("works")
 })
+
