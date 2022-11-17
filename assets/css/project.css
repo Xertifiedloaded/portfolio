@@ -39,8 +39,7 @@ body {
     left: 0;
     top: 0;
     width: 100%;
-    z-index: 1000;
-
+  
 }
 
 .active-header {
@@ -65,6 +64,11 @@ body {
 
 .nav-menu-icon {
     display: none;
+}
+
+.active {
+    opacity: 1;
+    transform: scale(1);
 }
 
 .hamburger {
@@ -251,21 +255,24 @@ ul {
         width: 100%;
         background-color: red;
         height: 100vh;
-        position: absolute;
-        top: 70%;
+        position: fixed;
+        top: 0;
         left: 0;
-        /* display: flex; */
+
         justify-content: center;
         align-items: center;
-        z-index: 1000;
+        z-index: 100;
+        overflow: hidden;
     }
 
     .hide {
         display: none;
     }
-.show{
-    display: flex;
-}
+
+    .show {
+        display: flex;
+    }
+
     .nav-menu {
         width: 100%;
         flex-direction: column;
@@ -274,7 +281,7 @@ ul {
 
     .header {
         width: 100%;
-        position: relative;
+        position: fixed;
 
     }
 
