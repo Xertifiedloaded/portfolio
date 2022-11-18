@@ -14,7 +14,7 @@
     --social-background: rgba(160, 36, 243, 0.3);
     --skills-bg:linear-gradient(rgb(87, 5, 158), rgb(74, 0, 224));
 }
-}
+
 
 * {
     margin: 0;
@@ -40,6 +40,7 @@ body {
     left: 0;
     width: 100%;
     z-index: 1000;
+    top: 0;
 }
 .header-flex {
     width: 100%;
@@ -218,7 +219,11 @@ ul {
 
 /* wait for now */
 
-
+fieldset{
+    border-bottom: none;
+    border-right: none;
+    border-left: none;
+}
 .social-container {
     width: 100%;
     padding: 15px 0;
@@ -495,8 +500,12 @@ a {
     box-shadow: 0 1px 4px rgb(146 161 176 / 30%);
     transition: all 0.2s ease-out;
     scale: 1;
+    padding: 0 10px;
 }
+.flex-content>h4{
 
+ color: black;
+}
 .flex-content:hover {
     scale: 1.01;
 }
@@ -658,11 +667,12 @@ ul {
 .contact-menu {
     color: #ccc;
     font-size: 15px;
+    padding: 0;
 }
 
 .quick-menu {
-    width: 100%;
-
+    width: 50%;
+padding: 0;
 }
 
 .portfolio-heading {
@@ -987,7 +997,7 @@ input {
     color: var(--color-light-yellow);
 }
 .skills-box{
-    padding-bottom: 40px;
+    padding: 40px 0;
     text-transform: capitalize;
     display: flex;
     /* flex-wrap: wrap; */
@@ -995,6 +1005,11 @@ input {
     justify-content: center;
     gap: 30px;
    
+}
+.cv{
+    color: black;
+font-weight: 400;
+    font-size: 17px;
 }
 .display-items{
     box-shadow: rgba(0, 0, 0, 0.2) 0px 4px 10px;
@@ -1007,6 +1022,7 @@ input {
     width: 100%;
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 .display-items{
     text-align: center;
@@ -1270,6 +1286,7 @@ input {
 
     .chevron {
         top: 30%;
+       
     }
 
     .contact-box {
