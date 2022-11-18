@@ -12,6 +12,8 @@
     --background-color: #e5ecfb;
     --color-green: rgb(34, 109, 0);
     --social-background: rgba(160, 36, 243, 0.3);
+    --skills-bg:linear-gradient(rgb(87, 5, 158), rgb(74, 0, 224));
+}
 }
 
 * {
@@ -408,7 +410,7 @@ ul {
 
 .edu-container {
     padding-top: 30px;
-    padding-bottom: 150px;
+    padding-bottom: 70px;
     width: 100%;
     margin-top: 20px;
     /* background-color: var(--background-color); */
@@ -970,7 +972,48 @@ input {
 .btn-article:hover {
     background-color: #2506ad;
 }
-
+.skills-heading{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+   text-transform: capitalize;
+    font-size: 20px;
+}
+.fa-code{
+    font-size: 25px;
+}
+.ability{
+    color: var(--color-light-yellow);
+}
+.skills-box{
+    padding-bottom: 40px;
+    text-transform: capitalize;
+    display: flex;
+    /* flex-wrap: wrap; */
+    width: 100%;
+    justify-content: center;
+    gap: 30px;
+   
+}
+.display-items{
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 4px 10px;
+    background: rgba(0, 0, 22, 0.9);
+    border-radius: 7px;
+    width: 10%;
+    height: 100px;
+}
+.skill-img{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.display-items{
+    text-align: center;
+}
+.skills-bg{
+    background: var(--skills-bg);
+}
 
 
 
@@ -1226,7 +1269,7 @@ input {
     }
 
     .chevron {
-        top: 10%;
+        top: 30%;
     }
 
     .contact-box {
@@ -1281,8 +1324,13 @@ input {
     .show{
         display: flex;
     }
-
-
+.skills-box{
+    /* display: block; */
+    flex-wrap: wrap;
+}
+.display-items{
+    width: 40%;
+}
 
 
 
