@@ -12,7 +12,7 @@
     --background-color: #e5ecfb;
     --color-green: rgb(34, 109, 0);
     --social-background: rgba(160, 36, 243, 0.3);
-    --skills-bg:linear-gradient(rgb(87, 5, 158), rgb(74, 0, 224));
+    --skills-bg: linear-gradient(rgb(87, 5, 158), rgb(74, 0, 224));
 }
 
 
@@ -31,46 +31,58 @@ body {
 }
 
 .active-header {
-    background-color: white;
+    background-color: blue;
     box-shadow: 0 1px 4px rgb(146 161 176 / 30%);
 }
-
 .header {
+    width: 100%;
+    /* background-color: blue; */
     position: fixed;
-    left: 0;
-    width: 100%;
+  
     z-index: 1000;
-    top: 0;
 }
-.header-flex {
-    width: 100%;
-    /* margin: 0 auto; */
-    padding: 20px 0;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
 
-}
-.display{
-    opacity: 0;
-    transition: all 2s ease-in-out; 
-}
-.active{
-    opacity: 1;
-}
-.nav-menu-icon {
+.mobile {
     display: none;
 }
+
+.header-flex {
+    display: flex;
+    justify-content: space-between;
+    /* justify-content: center; */
+    align-items: center;
+    padding: 20px 0;
+}
+
+.logo {
+    width: 50%;
+}
+
+.nav {
+    width: 50%;
+}
+
+.nav-menu {
+    display: flex;
+    justify-content: end;
+    gap: 20px;
+}
+
+.display {
+    opacity: 0;
+    transition: all 2s ease-in-out;
+}
+
+.active {
+    opacity: 1;
+}
+
 
 .hamburger {
     font-size: 20px;
 }
 
-.nav>.nav-menu {
-    width: 100%;
-    display: flex;
-    gap: 20px;
-}
+
 
 ul {
     list-style: none;
@@ -89,7 +101,7 @@ ul {
     column-gap: 200px;
     /* background-color: red; */
     z-index: 1000;
-  
+
 }
 
 .hi {
@@ -113,12 +125,15 @@ ul {
     border-radius: 100%;
 
 }
-.logo{
+
+.logo {
     text-transform: uppercase;
 }
-.fa-napster{
+
+.fa-napster {
     font-size: 20px;
 }
+
 .label-details {
     letter-spacing: 1.2px;
     font-size: 15px;
@@ -219,11 +234,12 @@ ul {
 
 /* wait for now */
 
-fieldset{
+fieldset {
     border-bottom: none;
     border-right: none;
     border-left: none;
 }
+
 .social-container {
     width: 100%;
     padding: 15px 0;
@@ -382,7 +398,7 @@ fieldset{
     font-size: 14px;
     font-weight: 300;
     line-height: 1.3;
- 
+
 }
 
 .name-add {
@@ -500,12 +516,14 @@ a {
     box-shadow: 0 1px 4px rgb(146 161 176 / 30%);
     transition: all 0.2s ease-out;
     scale: 1;
-    padding: 0 10px;
+    /* padding: 0 10px; */
 }
-.flex-content>h4{
 
- color: black;
+.flex-content>h4 {
+
+    color: black;
 }
+
 .flex-content:hover {
     scale: 1.01;
 }
@@ -672,7 +690,7 @@ ul {
 
 .quick-menu {
     width: 50%;
-padding: 0;
+    padding: 0;
 }
 
 .portfolio-heading {
@@ -944,6 +962,10 @@ input {
     text-transform: capitalize;
 }
 
+.mobile {
+    display: none;
+}
+
 .article-btn {
     width: 100%;
     display: flex;
@@ -982,21 +1004,25 @@ input {
 .btn-article:hover {
     background-color: #2506ad;
 }
-.skills-heading{
+
+.skills-heading {
     display: flex;
     width: 100%;
     justify-content: center;
     align-items: center;
-   text-transform: capitalize;
+    text-transform: capitalize;
     font-size: 20px;
 }
-.fa-code{
+
+.fa-code {
     font-size: 25px;
 }
-.ability{
+
+.ability {
     color: var(--color-light-yellow);
 }
-.skills-box{
+
+.skills-box {
     padding: 40px 0;
     text-transform: capitalize;
     display: flex;
@@ -1004,30 +1030,35 @@ input {
     width: 100%;
     justify-content: center;
     gap: 30px;
-   
+
 }
-.cv{
+
+.cv {
     color: black;
-font-weight: 400;
+    font-weight: 400;
     font-size: 17px;
 }
-.display-items{
+
+.display-items {
     box-shadow: rgba(0, 0, 0, 0.2) 0px 4px 10px;
     background: rgba(0, 0, 22, 0.9);
     border-radius: 7px;
     width: 10%;
     height: 100px;
 }
-.skill-img{
+
+.skill-img {
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.display-items{
+
+.display-items {
     text-align: center;
 }
-.skills-bg{
+
+.skills-bg {
     background: var(--skills-bg);
 }
 
@@ -1048,56 +1079,6 @@ font-weight: 400;
 
 
 @media screen and (max-width:600px) {
-    .nav-menu-icon {
-        display: block;
-    }
-
-    .nav {
-        width: 100%;
-        background-color: red;
-        height: 100vh;
-        position: absolute;
-        top: 70%;
-        left: 0;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        z-index: 1000;
-    }
-
-    .nav-menu {
-        width: 100%;
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .header {
-        width: 100%;
-        position: relative;
-
-    }
-
-    .desktop {
-        display: none;
-    }
-
-    /* .mobile {
-        width: 50%;
-        display: block;
-    }
-
-    .mobile>.hamburger {
-        display: flex;
-        justify-content: end;
-        font-size: 25px;
-    } */
-
-
-
-
-
-
-
 
 
     .static {
@@ -1122,6 +1103,18 @@ font-weight: 400;
         display: block;
         padding-top: 100px;
         text-align: center;
+    }
+.header{
+    width: 100%;
+    position: fixed;
+    top: 0;
+    right: 0;
+    background: red;
+}
+    .header-flex {
+        display: flex;
+width: 100%;
+
     }
 
     .img-container {
@@ -1286,7 +1279,7 @@ font-weight: 400;
 
     .chevron {
         top: 30%;
-       
+
     }
 
     .contact-box {
@@ -1338,20 +1331,46 @@ font-weight: 400;
     .hide {
         display: none;
     }
-    .show{
+
+    .show {
         display: flex;
     }
-.skills-box{
-    /* display: block; */
-    flex-wrap: wrap;
-}
-.display-items{
-    width: 40%;
-}
 
+    .skills-box {
+        /* display: block; */
+        flex-wrap: wrap;
+    }
 
+    .display-items {
+        width: 40%;
+    }
 
+    .desktop {
+        display: none;
+    }
 
+    .mobile {
+        display: block;
+        width: 50%;
+    }
+
+    .mobile>.hamburger {
+        display: flex;
+        justify-content: end;
+    }
+
+    .nav-menu {
+        width: 100%;
+        height: 100vh;
+        left: 0;
+        top: 50px;
+        position: fixed;
+        background: red;
+        /* display: flex; */
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
 
 
 }

@@ -50,18 +50,18 @@ window.addEventListener("scroll", () => {
         header.classList.add("active-header")
         logo.style.color = "black"
         nav.forEach(navLink => {
-            navLink.style.color = "black"
-            navLink.style.fontWeight = "500"
+            // navLink.style.color = "black"
+            // navLink.style.fontWeight = "500"
         })
         // console.log("y")
     }
     else {
-        logo.style.color = "white"
+        // logo.style.color = "white"
         header.classList.remove("active-header")
-        nav.forEach(navLink => {
-            navLink.style.color = "white"
-        })
-        // console.log("x")
+        // nav.forEach(navLink => {
+        //     navLink.style.color = "white"
+        // })
+        // // console.log("x")
     }
 })
 

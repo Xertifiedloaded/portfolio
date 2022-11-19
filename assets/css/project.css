@@ -39,12 +39,12 @@ body {
     left: 0;
     top: 0;
     width: 100%;
-  z-index: 100;
+    z-index: 100;
 }
 
 .active-header {
-    background-color: white;
-    box-shadow: 0 1px 4px rgb(146 161 176 / 30%);
+    /* background-color: white;
+    box-shadow: 0 1px 4px rgb(146 161 176 / 30%); */
 }
 
 .header-flex {
@@ -58,8 +58,17 @@ body {
 
 }
 
+.mobile {
+    display: none;
+}
+
+.logo {
+    width: 50%;
+}
+
 .nav {
-    display: flex;
+    width: 50%;
+
 }
 
 .nav-menu-icon {
@@ -79,7 +88,7 @@ body {
     width: 100%;
     display: flex;
     gap: 20px;
-
+    justify-content: end;
 }
 
 ul {
@@ -230,23 +239,28 @@ ul {
     background-position: center;
     background-size: cover;
 }
-.homepage{
+
+.homepage {
     margin-top: 50px;
     text-align: center;
 }
-.home-btn{
+
+.home-btn {
     padding: 15px 70px;
     border-radius: 5px;
     background: #2506ad;
     border: none;
 }
-a{
+
+a {
     text-decoration: none;
 }
-.back{
+
+.back {
     color: white;
     font-size: 17px;
 }
+
 @media screen and (max-width:600px) {
 
     .col {
@@ -263,22 +277,17 @@ a{
 
 
 
-    .nav-menu-icon {
-        display: block;
+
+
+
+    .header {
+        width: 100%;
+        position: fixed;
+        background-color: blue;
     }
 
-    .nav {
-        width: 100%;
-        background-color: red;
-        height: 100vh;
-        position: fixed;
-        top: 0;
-        left: 0;
-
-        justify-content: center;
-        align-items: center;
-        z-index: 100;
-        overflow: hidden;
+    .nav-list {
+        padding-bottom: 25px;
     }
 
     .hide {
@@ -286,20 +295,35 @@ a{
     }
 
     .show {
+        display: block;
+    }
+
+    .desktop {
+        display: none;
+    }
+    .mobile{
+        display: block;
+    }
+    .mobile>.hamburger{
         display: flex;
+        justify-content: end;
     }
-
-    .nav-menu {
+    .mobile-nav{
         width: 100%;
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .header {
-        width: 100%;
+        height: 100vh;
         position: fixed;
-
+        background: red;
+        left: 0;
     }
-
-
+    .nav-menu{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+    .nav-link{
+        padding-bottom: 20px;
+    }
 }
