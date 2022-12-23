@@ -1058,13 +1058,16 @@ input {
 
 .display-items {
     text-align: center;
+
 }
 
 .skills-bg {
     background: var(--skills-bg);
 }
 
-
+.react{
+    width: 40%;
+}
 
 
 

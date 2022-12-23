@@ -62,6 +62,8 @@ let images = new Array(
     "assets/images/sendna.png",
     "assets/images/validator.png",
     "assets/images/tsf-bank.png",
+    "assets/images/connect.png",
+    "assets/images/agrico.png",
 )
 let length = images.length
 let i = 0
