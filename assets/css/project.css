@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans&display=swap');
+
 
 :root {
     --color-deep-blue: #002057;
@@ -12,6 +13,7 @@
     --background-color: #e5ecfb;
     --color-green: rgb(34, 109, 0);
     --social-background: rgba(160, 36, 243, 0.3);
+    --skills-bg: linear-gradient(rgb(87, 5, 158), rgb(74, 0, 224));
 }
 
 * {
@@ -23,9 +25,9 @@
 }
 
 body {
-    background-color: black;
+    background: linear-gradient(90deg, #4831d4 67%, #ccf381 33%);
     color: white;
-    font-family: 'Lato', sans-serif;
+    font-family: 'Nunito Sans', sans-serif;
 }
 
 .container {
@@ -43,8 +45,8 @@ body {
 }
 
 .active-header {
-    /* background-color: white;
-    box-shadow: 0 1px 4px rgb(146 161 176 / 30%); */
+    background-color: red;
+    box-shadow: 0 1px 4px rgb(146 161 176 / 30%);
 }
 
 .header-flex {
@@ -112,51 +114,69 @@ ul {
 
 }
 
-.row:hover .link-code {
+.project-details {
+    width: 100%;
+    height: 100%;
+    padding: 20px 0;
+}
 
+.project-title {
+    text-align: center;
+    margin-top: 52px;
+    background: #ffd900;
+    padding: 5px 0;
+    transform: translateY(500%);
+    color: #002057;
+    text-transform: uppercase;
+}
+
+.btn {
+    padding: 5px 35px;
+}
+
+.nav-resume {
+    color: red;
+}
+
+.project-button {
     display: flex;
     justify-content: space-between;
-    width: 99%;
-    margin: 0 auto;
-    height: 100%;
-    column-gap: 50px;
-    align-items: center;
-    background-color: var(--social-background);
+    margin-top: 20px;
+}
+
+.info {
+    text-align: center;
+}
+
+.bg-item .project-info {
+    box-shadow: 0 0.5rem 1rem rgb(0 0 0 / 10%);
+    height: 200px;
+    background-color: white;
+    color: #002057;
+    display: flex;
+    transform: translateY(100%);
+    flex-direction: column;
+
+    justify-content: center;
 }
 
 .row>.bg-item {
-
+    overflow: hidden;
     width: 95%;
     height: 300px;
     margin: 0 auto;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+
 }
 
-.link-code {
-    display: none;
-    justify-content: space-between;
-    width: 99%;
-    margin: 0 auto;
-    height: 100%;
-    column-gap: 50px;
-    align-items: center;
-    background-color: var(--social-background);
+.bg-item :hover .project-info {
+    transform: translateY(0);
 }
 
-.link-code:hover {
-    display: flex;
-}
-
-.project-btn {
-
-    padding: 10px 30px;
-    border: none;
-    background-color: var(--color-light-yellow);
-    color: #2506ad;
-    font-size: 16px;
-    border-radius: 5px;
+.bg-item:hover .project-title {
+    transform: translateY(0);
 }
 
 .one {
@@ -169,7 +189,7 @@ ul {
 }
 
 .two {
-    background-image: url(/assets/images/huntr.png);
+    background-image: url(/assets/images/portfolio.png);
 
     background-repeat: no-repeat;
     background-position: center;
@@ -209,30 +229,6 @@ ul {
 }
 
 .seven {
-    background-image: url(/assets/images/portfo.png);
-
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-}
-
-.eight {
-    background-image: url(/assets/images/tsf-bank.png);
-
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-}
-
-.nine {
-    background-image: url(/assets/images/calc.png);
-
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-}
-
-.ten {
     background-image: url(/assets/images/composey.png);
 
     background-repeat: no-repeat;
@@ -240,8 +236,48 @@ ul {
     background-size: cover;
 }
 
+.eight {
+    background-image: url(/assets/images/tsf.png);
+
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.nine {
+    background-image: url(/assets/images/shushi-food.png);
+
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.ten {
+    background-image: url(/assets/images/huntr.png);
+
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.eleven {
+    background-image: url(/assets/images/agrico.png);
+
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.twelve {
+    background-image: url(/assets/images/connect.png);
+
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
 .homepage {
-    margin-top: 50px;
+    margin: 10px 0;
     text-align: center;
 }
 
@@ -261,6 +297,17 @@ a {
     font-size: 17px;
 }
 
+@media screen and (max-width:900px) {
+    .row {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .col {
+        flex-direction: column;
+    }
+}
+
 @media screen and (max-width:600px) {
 
     .col {
@@ -273,12 +320,6 @@ a {
         border: 1px solid rgba(255, 248, 220, 0.254);
         border-radius: 5px;
     }
-
-
-
-
-
-
 
     .header {
         width: 100%;
@@ -301,21 +342,26 @@ a {
     .desktop {
         display: none;
     }
-    .mobile{
+
+    .mobile {
         display: block;
     }
-    .mobile>.hamburger{
+
+    .mobile>.hamburger {
         display: flex;
         justify-content: end;
     }
-    .mobile-nav{
+
+    .mobile-nav {
         width: 100%;
         height: 100vh;
         position: fixed;
-        background: red;
+        background: var(--color-royal-blue);
         left: 0;
+        top: 6%;
     }
-    .nav-menu{
+
+    .nav-menu {
         width: 100%;
         height: 100%;
         display: flex;
@@ -323,7 +369,16 @@ a {
         flex-direction: column;
         align-items: center;
     }
-    .nav-link{
-        padding-bottom: 20px;
+
+    .nav-link {
+        /* padding-bottom: 20px; */
+        text-align: center;
+        width: 100%;
+        padding: 10px 0;
+    }
+
+    .activeNav {
+        background-color: blue;
+        transition: 3s all;
     }
 }

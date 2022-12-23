@@ -22,23 +22,25 @@
     transition: all .2s linear;
     text-transform: capitalize;
 }
-
+.main{
+    overflow-x: hidden;
+}
 body {
     background-color: black;
     color: white;
     /* background-color: #2506ad; */
     font-family: 'Lato', sans-serif;
+   /* overflow-x: hidden; */
 }
 
 .active-header {
     background-color: blue;
     box-shadow: 0 1px 4px rgb(146 161 176 / 30%);
 }
+
 .header {
     width: 100%;
-    /* background-color: blue; */
-    position: fixed;
-  
+    position: fixed;;
     z-index: 1000;
 }
 
@@ -1079,8 +1081,9 @@ input {
 
 
 @media screen and (max-width:600px) {
-
-
+body{
+    overflow-x: none;
+}
     .static {
         font-size: 17px;
     }
@@ -1104,17 +1107,19 @@ input {
         padding-top: 100px;
         text-align: center;
     }
-.header{
-    width: 100%;
-    position: fixed;
-    top: 0;
-    right: 0;
-    background: red;
-}
+
+    .header {
+        width: 100%;
+        /* position: fixed; */
+        top: 0;
+        /* right: 0; */
+        background: red;
+    }
+
     .header-flex {
         display: flex;
-width: 100%;
-
+        width: 100%;
+/* display: none; */
     }
 
     .img-container {
@@ -1126,10 +1131,10 @@ width: 100%;
         width: 100%;
     }
 
-    .my-img-container {
+    /* .my-img-container {
         width: 100%;
         margin: 0;
-    }
+    } */
 
     .xerty-img {
         width: 100%;

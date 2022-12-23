@@ -31,3 +31,5 @@ window.addEventListener("scroll", () => {
         console.log("x")
     }
 })
+let body = document.querySelector("body")
+body.style.overflowX="hidden"

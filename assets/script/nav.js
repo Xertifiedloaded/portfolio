@@ -17,26 +17,18 @@ function collapseMenu() {
         solid.classList.replace("fa-xmark", "fa-bars")
     }
 }
-
 hamburger.addEventListener("click", collapseMenu)
 // animate on scroll
 let content = document.querySelectorAll(".display")
-// let contentPosition = content.getBoundingClientRect()
-// console.log(screenPosition)
-// console.log(content)
 window.addEventListener("scroll", () => {
-
     content.forEach(windowContent => {
         let screenPosition = window.innerHeight / 5 * 4
-        // console.log(screenPosition)
         let contentPosition = windowContent.getBoundingClientRect().top
-        // console.log(contentPosition)
         if (contentPosition < screenPosition) {
             windowContent.classList.add("active")
-            console.log("were ti sise")
         } else {
             windowContent.classList.remove("active")
-            console.log("this were no work sha")
+       
         }
     })
 })
@@ -58,10 +50,6 @@ window.addEventListener("scroll", () => {
     else {
         // logo.style.color = "white"
         header.classList.remove("active-header")
-        // nav.forEach(navLink => {
-        //     navLink.style.color = "white"
-        // })
-        // // console.log("x")
     }
 })
 
