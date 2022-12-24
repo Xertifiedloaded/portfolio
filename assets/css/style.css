@@ -173,7 +173,10 @@ ul {
     width: 50%;
     /* border: 1px solid blue; */
 }
-
+.about-paragraph{
+    padding: 5px 0;
+    text-transform: none;
+}
 .social-intro>.hi {
     font-size: 20px;
     text-transform: capitalize;
@@ -441,12 +444,7 @@ fieldset {
     text-transform: capitalize;
 }
 
-.name-add>.front {
-    padding-top: 17px;
-    font-size: 16px;
-    line-height: 1.6;
-    /* width: 100%; */
-}
+
 
 .name-add>.dev {
     text-transform: capitalize;
@@ -1129,7 +1127,9 @@ video{
         border-radius: 100%;
     }
 }
-
+.new-address1{
+    text-transform: none;
+}
 
 @media screen and (max-width:600px) {
     video {
