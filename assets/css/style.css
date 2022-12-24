@@ -176,6 +176,7 @@ ul {
 .about-paragraph{
     padding: 5px 0;
     text-transform: none;
+    
 }
 .social-intro>.hi {
     font-size: 20px;
@@ -1316,7 +1317,7 @@ video{
 
     }
 
-    .name-add>.front {
+    .front {
         text-align: center;
         font-size: 12px;
     }
@@ -1334,7 +1335,10 @@ video{
         /* text-align: center; */
         text-align: start;
     }
-
+.label-details{
+    font-size: 12px;
+    text-align: center;
+}
     .life-img-gallery {
         width: 80%;
         height: 40px;
@@ -1343,7 +1347,10 @@ video{
     .fa-chevron-left {
         left: 3%;
     }
-
+.about-paragraph{
+    text-align: center;
+    font-size: 12PX;
+}
     .fa-chevron-right {
         left: 90%;
     }
