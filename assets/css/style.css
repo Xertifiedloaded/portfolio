@@ -22,15 +22,17 @@
     transition: all .2s linear;
     text-transform: capitalize;
 }
-.main{
+
+.main {
     overflow-x: hidden;
 }
+
 body {
     background-color: black;
     color: white;
     /* background-color: #2506ad; */
     font-family: 'Lato', sans-serif;
-   /* overflow-x: hidden; */
+    /* overflow-x: hidden; */
 }
 
 .active-header {
@@ -40,10 +42,16 @@ body {
 
 .header {
     width: 100%;
-    position: fixed;;
+    position: fixed;
+    ;
     z-index: 1000;
 }
-
+.online{
+    background-color: red;
+    border-radius: 2px;
+    border: none;
+    width: 100%;
+}
 .mobile {
     display: none;
 }
@@ -112,19 +120,22 @@ ul {
 
 .img-container {
     /* width: 250px; */
-    width: 250px;
-    height: 250px;
-    border-radius: 100%;
-    background-image: url(/assets/images/hero.png);
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    background-color: #ff7b00;
+    background-image: url(/assets/images/xertified.png);
     background-repeat: no-repeat;
     background-position: center;
-    background-size: contain;
+    background-size: cover;
     /* border: 1px solid blue; */
 }
 
 .hero {
-    width: 100%;
-    border-radius: 100%;
+    width: 300px;
+    width: 200px;
+    height: 300px;
+    border-radius: 50%;
 
 }
 
@@ -1065,7 +1076,7 @@ input {
     background: var(--skills-bg);
 }
 
-.react{
+.react {
     width: 40%;
 }
 
@@ -1084,9 +1095,10 @@ input {
 
 
 @media screen and (max-width:600px) {
-body{
-    overflow-x: none;
-}
+    body {
+        overflow-x: none;
+    }
+
     .static {
         font-size: 17px;
     }
@@ -1122,7 +1134,7 @@ body{
     .header-flex {
         display: flex;
         width: 100%;
-/* display: none; */
+        /* display: none; */
     }
 
     .img-container {
@@ -1134,10 +1146,10 @@ body{
         width: 100%;
     }
 
-    /* .my-img-container {
-        width: 100%;
-        margin: 0;
-    } */
+    .my-img-container {
+        width: 80%;
+        margin: 0 auto;
+    }
 
     .xerty-img {
         width: 100%;

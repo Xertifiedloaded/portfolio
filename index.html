@@ -21,7 +21,7 @@
     <main class="main">
         <header>
             <!-- <div class="container"> -->
-            <div class="header">
+            <div id="home" class="header">
                 <div class="container">
                     <div class="header-flex">
                         <div class="logo"><i class="fa-brands fa-napster"></i> <span class=""><i
@@ -29,9 +29,9 @@
                                 class="fa-solid fa-a"></i>n</div>
                         <div class="nav desktop">
                             <ul class="nav-menu">
-                                <li class="nav-list"><a class="nav-link">home</a></li>
-                                <li class="nav-list"><a class="nav-link">about</a></li>
-                                <li class="nav-list"><a class="nav-link">portfolio</a></li>
+                                <li class="nav-list"><a href="#home" class="nav-link">home</a></li>
+                                <li class="nav-list"><a  href="#about" class="nav-link">about</a></li>
+                                <li class="nav-list"><a href="#work" class="nav-link">portfolio</a></li>
                                 <li class="nav-list"><a class="nav-link">education</a></li>
                                 <li class="nav-list"><a class="nav-link">contact</a></li>
                                 <li class="nav-list"><a class="nav-link">skills</a></li>
@@ -43,7 +43,7 @@
                                 <li class="nav-list"><a class="nav-link">home</a></li>
                                 <li class="nav-list"><a class="nav-link">about</a></li>
                                 <li class="nav-list"><a class="nav-link">portfolio</a></li>
-                                <li class="nav-list"><a class="nav-link">education</a></li>
+                                <li class="nav-list"><a href="#edu" class="nav-link">education</a></li>
                                 <li class="nav-list"><a class="nav-link">contact</a></li>
                                 <li class="nav-list"><a class="nav-link">skills</a></li>
                             </ul>
@@ -62,7 +62,7 @@
             <div class="container">
                 <div class="introduction">
                     <div class="social-intro">
-                        <h2 id="about" class="hi">
+                        <h2 class="hi">
                             hi there, <br>i'm Makinde <span class="span">Olaitan</span>
                         </h2>
                         <div class="wrapper">
@@ -72,7 +72,7 @@
                         <div class="button-container">
                             <button class="about-btn">
                                 <span><a class="cv"
-                                        href="https://drive.google.com/file/d/1HWFQTFcRb2jv2qnxXH5uK7NFLbH7xWEh/view?usp=sharing">Download
+                                        href="https://drive.google.com/file/d/1gQQD-CeUHbN528bXZ9OYYLnyp3RTzGFO/view?usp=share_link">Download
                                         CV</a></span>
                                 <i class="fa-solid fa-circle-arrow-down"></i>
                             </button>
@@ -87,9 +87,9 @@
                                 <li class="social-items"><i class="fa-brands fa-dev"></i></li>
                             </ul>
                         </div>
-                    </div>
-                    <div class="img-container">
-                        <!-- <img class="hero" src="assets/images/hero.png"> -->
+                    </div >
+                    <div id="about"  class="img-container">
+                        <!-- <img class="hero" src="assets/images/xertified.png"> -->
                     </div>
                 </div>
 
@@ -109,7 +109,7 @@
 
                     <div class="flex-name-address ">
                         <div class="my-img-container">
-                            <img class="xerty-img" src="assets/images/xerty-p.jpeg">
+                            <img class="xerty-img" src="assets/images/xertified.png">
                         </div>
                         <div class="address ">
                             <div class="name-add">
@@ -181,7 +181,7 @@
                                 </div>
                             </div>
                             <div class="card display">
-                                <div class="flex-img">
+                                <div  id="#edu" class="flex-img">
                                     <img class="funaab" src="assets/images/code.jpg">
                                 </div>
                                 <div class="flex-content">
@@ -308,17 +308,25 @@
                     <p class=" display">08050726434</p>
                 </div>
 
-                <form class="my-form display" action="">
+                <form class="my-form display" >
                     <div class="container">
-                        <input type="text" placeholder="your name">
-                        <input type="email" placeholder="Enter your email">
-                        <input type="text" placeholder="enter your phone number">
+                        <input class="name" type="text" placeholder="your name">
+                        <div  class="error1">
+
+                        </div>
+                        <input class="email" type="text" placeholder="Enter your email">
+                            <div class="error2">
+                            
+                            </div>
+                        <input  class="phone" type="text" placeholder="enter your phone number">
+                            <div class="error3">
+                            
+                            </div>
                         <input class="help" type="text" placeholder="how can i help you">
                         <div class="form-btn">
-                            <button class="send-btn">send message</button>
+                            <button type="submit" class="send-btn">send message</button>
                         </div>
                     </div>
-
                 </form>
             </div>
 
@@ -338,7 +346,7 @@
                 <div class="container">
                     <div class="footer-flex display">
                         <div class="footer-box">
-                            <h1 class="portfolio-heading">xertified portfolio</h1>
+                            <h1 class="portfolio-heading">Olaitan portfolio</h1>
                             <p class="portfolio-msg">Thank you for visiting my personal portfolio website. Connect with
                                 me
                                 over socials.

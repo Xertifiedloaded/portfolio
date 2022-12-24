@@ -3,7 +3,7 @@ const hide = document.querySelector(".hide")
 const hamburger = document.querySelector(".hamburger")
 const solid = document.querySelector(".fa-solid")
 let slideNav = document.querySelector(".nav")
-console.log(slideNav)
+// console.log(slideNav)
 let isActive = false
 function collapseMenu() {
     if (isActive == false) {
@@ -28,7 +28,7 @@ window.addEventListener("scroll", () => {
             windowContent.classList.add("active")
         } else {
             windowContent.classList.remove("active")
-       
+
         }
     })
 })
@@ -37,12 +37,12 @@ let nav = document.querySelectorAll(".nav-link")
 let header = document.querySelector(".header")
 let logo = document.querySelector(".logo")
 window.addEventListener("scroll", () => {
-    console.log(window.scrollY)
+    // console.log(window.scrollY)
     if (window.scrollY >= 50) {
         header.classList.add("active-header")
         logo.style.color = "black"
         nav.forEach(navLink => {
-            // navLink.style.color = "black"
+            // navLink.style.color = "white"
             // navLink.style.fontWeight = "500"
         })
         // console.log("y")
@@ -50,6 +50,7 @@ window.addEventListener("scroll", () => {
     else {
         // logo.style.color = "white"
         header.classList.remove("active-header")
+        logo.style.color = "yellow"
     }
 })
 
@@ -78,3 +79,36 @@ function moves() {
 
 
 
+let newNavLink = document.querySelectorAll(".nav-link")
+newNavLink.forEach((nav) => {
+    nav.addEventListener("click", () => {
+        newNavLink.forEach((e) => {
+            e.classList.remove("online")
+        })
+        nav.classList.add("online")
+        console.log("heheheh")
+    })
+})
+
+// form validation
+let form = document.querySelector(".my-form")
+// console.log(form)
+let mail = document.querySelector(".email")
+let phone = document.querySelector(".phone")
+let name1 = document.querySelector(".name")
+let error1 = document.querySelector(".error1")
+let error2 = document.querySelector(".error2")
+let error3 = document.querySelector(".error3")
+form.addEventListener("submit", (e) => {
+    e.preventDefault()
+    if (mail == "") {
+        console.log("hi")
+    }
+    if (name1 < 1) {
+        console.log("hehhe")
+    }
+    else {
+        window.open('mailto:certifiedloaded@gmail.com')
+    }
+    return false
+})
