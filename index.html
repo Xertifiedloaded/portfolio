@@ -18,7 +18,7 @@
 <!-- <body onload="moves()"> -->
 
 <body>
-    <main class="main">
+    <main class="main"  id="home">
         <header>
             <!-- <div class="container"> -->
             <div id="home" class="header">
@@ -30,22 +30,22 @@
                         <div class="nav desktop">
                             <ul class="nav-menu">
                                 <li class="nav-list"><a href="#home" class="nav-link">home</a></li>
-                                <li class="nav-list"><a  href="#about" class="nav-link">about</a></li>
+                                <li class="nav-list"><a href="#about" class="nav-link">about</a></li>
                                 <li class="nav-list"><a href="#work" class="nav-link">portfolio</a></li>
-                                <li class="nav-list"><a class="nav-link">education</a></li>
-                                <li class="nav-list"><a class="nav-link">contact</a></li>
-                                <li class="nav-list"><a class="nav-link">skills</a></li>
+                                <li class="nav-list"><a href="#edu" class="nav-link">education</a></li>
+                                <li class="nav-list"><a href="#contact" class="nav-link">contact</a></li>
+                                <li class="nav-list"><a href="#skills" class="nav-link">skills</a></li>
                             </ul>
                         </div>
                         <div class="nav mobile">
                             <span class="hamburger"><i class="fa-solid fa-bars"></i></span>
                             <ul class="nav-menu hide">
-                                <li class="nav-list"><a class="nav-link">home</a></li>
-                                <li class="nav-list"><a class="nav-link">about</a></li>
-                                <li class="nav-list"><a class="nav-link">portfolio</a></li>
+                                <li class="nav-list"><a href="#home" class="nav-link">home</a></li>
+                                <li class="nav-list"><a href="#about" class="nav-link">about</a></li>
+                                <li class="nav-list"><a href="#work" class="nav-link">portfolio</a></li>
                                 <li class="nav-list"><a href="#edu" class="nav-link">education</a></li>
-                                <li class="nav-list"><a class="nav-link">contact</a></li>
-                                <li class="nav-list"><a class="nav-link">skills</a></li>
+                                <li class="nav-list"><a href="#contact" class="nav-link">contact</a></li>
+                                <li class="nav-list"><a href="#skills" class="nav-link">skills</a></li>
                             </ul>
                         </div>
                     </div>
@@ -59,8 +59,13 @@
         </header>
 
         <section>
+            <video autoplay muted loop>
+                <source src="video.mp4" type="video/mp4">
+            </video>
             <div class="container">
+
                 <div class="introduction">
+
                     <div class="social-intro">
                         <h2 class="hi">
                             hi there, <br>i'm Makinde <span class="span">Olaitan</span>
@@ -87,11 +92,12 @@
                                 <li class="social-items"><i class="fa-brands fa-dev"></i></li>
                             </ul>
                         </div>
-                    </div >
-                    <div id="about"  class="img-container">
+                    </div>
+                    <div id="about" class="img-container">
                         <!-- <img class="hero" src="assets/images/xertified.png"> -->
                     </div>
                 </div>
+
 
 
             </div>
@@ -115,7 +121,7 @@
                             <div class="name-add">
                                 <h1 class="my-name display"><i class="fa-solid fa-user"></i>i'm Olaitan</h1>
                                 <p class="dev display">frontend developer</p>
-                                <p class="front display">I am a Front-end developer based in funaab Abeokuta. I am a
+                                <p class="front display">i'm a Front-end developer based in funaab Abeokuta. I am a
                                     Genetics
                                     undergraduate student from FUNAAB. I am very passionate about improving my coding
                                     skills
@@ -144,7 +150,7 @@
                                             <p class="newaddress">kuola Apata Ibadan</p>
                                         </div>
                                     </div>
-                                    <div class="fa-container display">
+                                    <div   class="fa-container display">
                                         <i class="fa-solid fa-envelope"></i>
                                         <div class="solid">
                                             <label for="name">Email</label>
@@ -160,7 +166,7 @@
         <section>
             <div class="edu-container">
                 <div class="container">
-                    <div id="education" class="education">
+                    <div id="education" class="education" >
                         <div class="edu-cap display">
                             <span><i class="fa-solid fa-graduation-cap"></i></span>
                             <h1>my<span class="edu-header">Education</span></h1>
@@ -181,7 +187,7 @@
                                 </div>
                             </div>
                             <div class="card display">
-                                <div  id="#edu" class="flex-img">
+                                <div class="flex-img">
                                     <img class="funaab" src="assets/images/code.jpg">
                                 </div>
                                 <div class="flex-content">
@@ -195,8 +201,8 @@
                     </div>
                 </div>
             </div>
-        </section>
-        <section>
+        </section id="about">
+        <section id="skills">
             <div class="section skills-bg display">
                 <div class="container">
                     <div class="skills-heading display">
@@ -244,10 +250,10 @@
                             <h1>netlify</h1>
                         </div>
                         <div class="display-items display">
-                         <img class="react" src="assets/images/React.png">
-                         <h1>react</h1>
+                            <img class="react" src="assets/images/React.png">
+                            <h1>react</h1>
                         </div>
-                       
+
                     </div>
                 </div>
             </div>
@@ -311,17 +317,17 @@
                 <form class="my-form display" >
                     <div class="container">
                         <input class="name" type="text" placeholder="your name">
-                        <small  class="error1">
+                        <small class="error1">
 
                         </small>
                         <input class="email" type="email" placeholder="Enter your email">
-                            <small class="error2">
-                            
-                            </small>
-                        <input  class="phone" type="text" placeholder="enter your phone number">
-                            <small class="error3">
-                            
-                            </small>
+                        <small class="error2">
+
+                        </small>
+                        <input class="phone" type="text" placeholder="enter your phone number">
+                        <small class="error3">
+
+                        </small>
                         <input class="help" type="text" placeholder="how can i help you">
                         <div class="form-btn">
                             <button type="submit" class="send-btn">send message</button>
@@ -342,7 +348,7 @@
         </section>
 
         <footer>
-            <div class="footer">
+            <div class="footer" id="contact">
                 <div class="container">
                     <div class="footer-flex display">
                         <div class="footer-box">
@@ -386,7 +392,7 @@
                             </ul>
                         </div>
                         <!-- <div class="social-contact"> -->
-                        <div class="footer-box">
+                        <div  class="footer-box">
                             <h1 class="portfolio-heading display">Contact Info</h1>
                             <ul class="contact-menu">
                                 <li class="contact-list">

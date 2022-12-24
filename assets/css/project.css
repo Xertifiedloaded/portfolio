@@ -132,6 +132,7 @@ ul {
 
 .btn {
     padding: 5px 35px;
+    border: none;
 }
 
 .nav-resume {
@@ -151,12 +152,16 @@ ul {
 .bg-item .project-info {
     box-shadow: 0 0.5rem 1rem rgb(0 0 0 / 10%);
     height: 200px;
+    background-image: url(/assets/images/React.png);
+    background-position: right;
+    background-size: contain;
     background-color: white;
+    background-repeat: no-repeat;
     color: #002057;
     display: flex;
     transform: translateY(100%);
     flex-direction: column;
-
+    width: 100%;
     justify-content: center;
 }
 
@@ -304,8 +309,13 @@ a {
     }
 
     .col {
-        flex-direction: column;
+        /* flex-direction: column; */
     }
+    .row{
+        width: 32%;
+    
+    }
+
 }
 
 @media screen and (max-width:600px) {

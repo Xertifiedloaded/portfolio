@@ -46,17 +46,22 @@ body {
     ;
     z-index: 1000;
 }
-.error1,.error2,.error3{
+
+.error1,
+.error2,
+.error3 {
     font-size: 12px;
     color: red;
     padding-left: 5px;
 }
-.online{
+
+.online {
     background-color: red;
     border-radius: 2px;
     border: none;
     width: 100%;
 }
+
 .mobile {
     display: none;
 }
@@ -114,8 +119,10 @@ ul {
     /* justify-content: center; */
     align-items: center;
     column-gap: 200px;
+
+    top: 0;
     /* background-color: red; */
-    z-index: 1000;
+    z-index: 1;
 
 }
 
@@ -1085,6 +1092,13 @@ input {
     width: 40%;
 }
 
+video {
+    height: 50%;
+    width: 100%;
+}
+
+
+video{display: none;}
 
 
 
@@ -1092,14 +1106,36 @@ input {
 
 
 
+@media screen and (max-width:900px) {
+    .my-img-container {
+        width: 50%;
+    }
+video{
+    display: none;
+}
+.introduction{
+    position: relative;
+}
 
 
+    .my-img-container>.xerty-img {
+        height: 100%;
+        width: 100%;
+    }
 
-
-
+    .img-container {
+        width: 200px;
+        height: 200px;
+        border-radius: 100%;
+    }
+}
 
 
 @media screen and (max-width:600px) {
+    video {
+        display: none;
+    }
+
     body {
         overflow-x: none;
     }
@@ -1123,9 +1159,14 @@ input {
     .introduction {
         width: 100%;
         height: 50vh;
-        display: block;
+        position: relative;
+        z-index: 100;
         padding-top: 100px;
-        text-align: center;
+        /* text-align: center; */
+        display: flex;
+        z-index: 100;
+        justify-content: center;
+        align-items: center;
     }
 
     .header {
@@ -1145,6 +1186,10 @@ input {
     .img-container {
         width: 70%;
         margin: 0 auto;
+    }
+
+    .online {
+        background: blue;
     }
 
     .hero {
@@ -1286,7 +1331,8 @@ input {
 
     .label-details>p {
         font-size: 14px;
-        text-align: center;
+        /* text-align: center; */
+        text-align: start;
     }
 
     .life-img-gallery {

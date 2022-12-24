@@ -102,18 +102,18 @@ let form = document.querySelector(".my-form")
 // console.log(form)
 form.addEventListener("submit", (e) => {
     e.preventDefault()
-    if (mail == "") {
-        error1.textContent = "*please enter your email*"
-    }
-    if (name1 < 1) {
-        error2.textContent = "*please enter your name*"
-    }
-    if (phone < 11){
-        error3.textContent = "*please enter correct phone number*"
-    }
-    else {
+    // if (mail == "") {
+    //     error1.textContent = "*please enter your email*"
+    // }
+    // if (name1 < 1) {
+    //     error2.textContent = "*please enter your name*"
+    // }
+    // if (phone < 11){
+    //     error3.textContent = "*please enter correct phone number*"
+    // }
+    // else {
         window.open('mailto:certifiedloaded@gmail.com')
-    }
+    // }
     
 return false
 })
