@@ -3,6 +3,13 @@ const hide = document.querySelector(".hide")
 const hamburger = document.querySelector(".hamburger")
 const solid = document.querySelector(".fa-solid")
 let slideNav = document.querySelector(".nav")
+// form
+let mail = document.querySelector(".email").value
+let phone = document.querySelector(".phone").value
+let name1 = document.querySelector(".name").value
+let error1 = document.querySelector(".error1")
+let error2 = document.querySelector(".error2")
+let error3 = document.querySelector(".error3")
 // console.log(slideNav)
 let isActive = false
 function collapseMenu() {
@@ -93,22 +100,20 @@ newNavLink.forEach((nav) => {
 // form validation
 let form = document.querySelector(".my-form")
 // console.log(form)
-let mail = document.querySelector(".email")
-let phone = document.querySelector(".phone")
-let name1 = document.querySelector(".name")
-let error1 = document.querySelector(".error1")
-let error2 = document.querySelector(".error2")
-let error3 = document.querySelector(".error3")
 form.addEventListener("submit", (e) => {
     e.preventDefault()
     if (mail == "") {
-        console.log("hi")
+        error1.textContent = "*please enter your email*"
     }
     if (name1 < 1) {
-        console.log("hehhe")
+        error2.textContent = "*please enter your name*"
+    }
+    if (phone < 11){
+        error3.textContent = "*please enter correct phone number*"
     }
     else {
         window.open('mailto:certifiedloaded@gmail.com')
     }
-    return false
+    
+return false
 })
