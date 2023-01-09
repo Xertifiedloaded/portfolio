@@ -19,7 +19,7 @@ window.addEventListener("scroll", () => {
         nav.forEach(navLink => {
             navLink.style.color = "black"
             navLink.style.fontWeight = "500"
-        })
+        })2
         console.log("y")
     }
     else {
